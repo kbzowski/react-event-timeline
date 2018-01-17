@@ -12,7 +12,7 @@ let style = {
     content: '',
     position: 'absolute',
     top: 0,
-    left: 18,
+    left: 15,
     height: '100%',
     width: 2,
     background: '#a0b2b8'
