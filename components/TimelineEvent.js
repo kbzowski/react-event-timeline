@@ -44,6 +44,7 @@ class TimelineEvent extends Component {
       cardHeaderStyle,
       titleStyle,
       subtitleStyle,
+	  onHeaderClick,
       ...otherProps
     } = this.props
     return (
@@ -55,7 +56,7 @@ class TimelineEvent extends Component {
         </div>
         <div {...otherProps} style={this.containerStyle()}>
           <div style={s.eventContainerBefore} />
-          <div style={container === 'card' ? {...s.cardTitle, ...cardHeaderStyle} : {}}>
+          <div onClick={onHeaderClick} style={container === 'card' ? {...s.cardTitle, ...cardHeaderStyle} : {}}>
             {createdAt &&
               <div style={this.timeStyle()}>
                 {createdAt}
