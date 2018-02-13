@@ -87,6 +87,7 @@ Each event in the timeline will be represented by the `TimelineEvent` component.
 | titleStyle   | object   | Override style for the title content |
 | subtitleStyle | object | Override style for the subtitle content |
 | cardHeaderStyle | object | Override style for the card header if container is `card` |
+| onHeaderClick | function | Handle click event on the event header |
 
 ### TimelineBlip
 
