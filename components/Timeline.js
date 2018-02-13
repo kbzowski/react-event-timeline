@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import s from './styles'
 
 class Timeline extends Component {
-
   render () {
     return (
       <div>

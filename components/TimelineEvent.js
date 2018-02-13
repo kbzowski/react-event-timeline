@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import s from './styles'
 
 class TimelineEvent extends Component {
-
   mergeNotificationStyle(iconColor, bubbleStyle) {
     const iconColorStyle = iconColor ? {...s.eventType, ...{color: iconColor, borderColor: iconColor}} : s.eventType
     return {...iconColorStyle, ...bubbleStyle}
@@ -44,7 +43,7 @@ class TimelineEvent extends Component {
       cardHeaderStyle,
       titleStyle,
       subtitleStyle,
-	  onHeaderClick,
+      onHeaderClick,
       ...otherProps
     } = this.props
     return (
@@ -99,7 +98,8 @@ TimelineEvent.propTypes = {
   cardHeaderStyle: PropTypes.object,
   style: PropTypes.object,
   titleStyle: PropTypes.object,
-  subtitleStyle: PropTypes.object
+  subtitleStyle: PropTypes.object,
+  onHeaderClick: PropTypes.func
 }
 
 TimelineEvent.defaultProps = {

@@ -3,7 +3,6 @@ import PropTypes from 'prop-types'
 import s from './styles'
 
 class TimelineBlip extends Component {
-
   mergeNotificationStyle(iconColor) {
     return iconColor ? { ...s.eventType, ...{ color: iconColor, borderColor: iconColor } } : s.eventType
   }
