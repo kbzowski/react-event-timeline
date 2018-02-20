@@ -103,7 +103,7 @@ TimelineEvent.propTypes = {
   cardHeaderStyle: PropTypes.object,
   style: PropTypes.object,
   titleStyle: PropTypes.object,
-  subtitleStyle: PropTypes.object
+  subtitleStyle: PropTypes.object,
   onHeaderClick: PropTypes.func
 }
 
