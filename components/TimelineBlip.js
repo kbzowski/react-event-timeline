@@ -33,8 +33,8 @@ TimelineBlip.propTypes = {
   icon: PropTypes.node,
   iconColor: PropTypes.string,
   iconStyle: PropTypes.object,
-  orientation: PropTypes.string,
-  style: PropTypes.object
+  style: PropTypes.object,
+  orientation: PropTypes.string
 }
 
 TimelineBlip.defaultProps = {
