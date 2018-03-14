@@ -5,7 +5,14 @@ import s from './styles'
 class Timeline extends Component {
   render () {
     const { orientation = 'left', children, style = {}, ...otherProps } = this.props
-    const childrenWithProps = React.Children.map(children, child => React.cloneElement(child, { orientation }))
+	
+	let filteredChildren = []
+	if(Array.isArray(children))
+		filteredChildren = children.filter(child => child !== null)
+	else 
+		filteredChildren = children
+	
+    const childrenWithProps = React.Children.map(filteredChildren, child => React.cloneElement(child, { orientation }))
     const leftOrRight = (orientation === 'right') ? {...s['containerBefore--right']} : {...s['containerBefore--left']}
     return (
       <div>
